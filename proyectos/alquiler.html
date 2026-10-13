@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sistema de Alquiler de Propiedades</title>
+    <link href="../vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body class="airbnb"><a class="back-link" href="../index.html#proyectos">← Volver al CV</a>
+    <div class="demo-shell">
+        <aside class="demo-sidebar">
+            <h1>Menú</h1>
+            <div class="nav flex-column" id="air-nav"><button class="nav-link active"
+                    data-view="propiedades">Propiedades</button><button class="nav-link"
+                    data-view="clientes">Clientes</button><button class="nav-link"
+                    data-view="reservas">Reservas</button><button class="nav-link"
+                    data-view="graficos">Gráficos</button></div><button class="btn btn-sm btn-outline-secondary mt-4"
+                id="load-sample">Carga inicial (hilo)</button>
+        </aside>
+        <main class="demo-main">
+            <div class="demo-top">
+                <h2 id="view-title">Propiedades</h2>
+            </div>
+            <div id="actions" class="actions"></div>
+            <div class="table-wrap">
+                <table class="table table-sm align-middle">
+                    <thead>
+                        <tr id="headers"></tr>
+                    </thead>
+                    <tbody id="rows"></tbody>
+                </table>
+            </div>
+            <div id="graph-area" class="graph-area d-none"></div>
+        </main>
+    </div>
+    <div class="modal fade" id="entry-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-6" id="modal-title"></h2><button type="button" class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="entry-form"></form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../script-demo-airbnb.js"></script>
+</body>
+
+</html>

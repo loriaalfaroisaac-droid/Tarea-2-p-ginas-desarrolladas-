@@ -1,0 +1,18 @@
+PORTAFOLIO CV — ISAAC ARTURO LORÍA ALFARO
+
+Para abrirlo, extrae la carpeta y abre index.html en un navegador moderno.
+Bootstrap 5.3.8 está incluido en vendor/bootstrap y funciona sin cargar la CDN.
+
+Estructura:
+- index.html, styles.css, script.js: CV y página principal.
+- proyectos/alquiler.html: vista del sistema de alquiler.
+- proyectos/almacen.html: simulador NOVA ONLINE.
+- script-demo-airbnb.js y script-demo-nova.js: interacciones de demostración.
+
+Las filas de ejemplo y cualquier registro agregado existen solo en memoria
+mientras la página esté abierta; recargarla vuelve a los datos iniciales.
+Las pantallas web recrean las interfaces descritas por el código fuente
+incluido en los ZIP. No conectan con los servidores o bases de datos originales.
+
+CV: se usaron únicamente los datos proporcionados por Isaac. No se incluyó
+una lista independiente de habilidades técnicas porque no fue proporcionada.

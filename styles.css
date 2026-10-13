@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --ink: #172b3c;
+    --navy: #102337;
+    --blue: #8cb9ff;
+    --paper: #f4f6f7;
+    --muted: #65727c
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 78px
+}
+
+body {
+    font-family: Manrope, Arial, sans-serif;
+    color: var(--ink)
+}
+
+.navbar {
+    background: rgba(13, 32, 49, .96);
+    backdrop-filter: blur(12px)
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: -.07em
+}
+
+.navbar-brand span {
+    color: #94bcff
+}
+
+.nav-link {
+    font-size: .85rem;
+    margin-left: 1rem
+}
+
+.hero {
+    position: relative;
+    background: var(--navy);
+    color: white;
+    padding: 155px 0 95px;
+    overflow: hidden
+}
+
+.hero:after {
+    content: "";
+    position: absolute;
+    width: 560px;
+    height: 560px;
+    border: 1px solid #45627a55;
+    border-radius: 50%;
+    right: -120px;
+    top: -130px;
+    box-shadow: 0 0 0 70px #45627a18, 0 0 0 140px #45627a10
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1
+}
+
+.eyebrow,
+.section-head>span,
+.identity-card small,
+.contact-options small {
+    font: 500 .7rem 'DM Mono', monospace;
+    letter-spacing: .14em;
+    color: #8296a6
+}
+
+.hero h1 {
+    font-weight: 800;
+    font-size: clamp(3.3rem, 8vw, 6.5rem);
+    letter-spacing: -.075em;
+    line-height: .98;
+    margin-top: 1.2rem
+}
+
+.hero h1 span {
+    color: #91baff
+}
+
+.hero .lead {
+    max-width: 570px;
+    color: #d1dbe3;
+    font-size: 1.15rem;
+    line-height: 1.8
+}
+
+.btn-accent {
+    background: #95bcff;
+    color: #102337;
+    font-weight: 700
+}
+
+.btn-accent:hover {
+    background: #b0ceff;
+    color: #102337
+}
+
+.identity-card {
+    padding: 26px;
+    background: #1b354b;
+    border: 1px solid #ffffff1c;
+    border-radius: 4px;
+    max-width: 350px;
+    margin-left: auto
+}
+
+.avatar {
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #91baff;
+    color: #102337;
+    font-weight: 800;
+    margin-bottom: 23px
+}
+
+.identity-card small {
+    display: block;
+    margin-bottom: 8px
+}
+
+.identity-card a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: .88rem;
+    margin: 5px 0
+}
+
+.identity-card .line {
+    height: 1px;
+    background: #ffffff26;
+    margin: 21px 0
+}
+
+.identity-card .d-flex {
+    color: #b8c7d2;
+    font-size: .85rem
+}
+
+.identity-card strong {
+    color: white
+}
+
+.hero-note {
+    font: .65rem 'DM Mono', monospace;
+    color: #8ca1b2;
+    letter-spacing: .12em;
+    margin-top: 80px
+}
+
+.section-pad {
+    padding: 104px 0
+}
+
+.section-muted {
+    background: var(--paper)
+}
+
+.section-head {
+    margin-bottom: 48px
+}
+
+.section-head>span {
+    color: #50739b
+}
+
+.section-head h2 {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -.07em;
+    line-height: 1.05;
+    margin-top: 17px
+}
+
+.section-head p {
+    color: var(--muted);
+    max-width: 560px;
+    line-height: 1.8;
+    margin-top: 20px
+}
+
+.profile-copy {
+    font-size: 1.18rem;
+    line-height: 1.9;
+    color: #45545f
+}
+
+.study {
+    display: grid;
+    grid-template-columns: 165px 1fr 40px;
+    gap: 20px;
+    padding: 27px 0;
+    border-top: 1px solid #d9e0e4;
+    align-items: start
+}
+
+.study:last-child {
+    border-bottom: 1px solid #d9e0e4
+}
+
+.year {
+    font: .72rem 'DM Mono', monospace;
+    color: #617588;
+    padding-top: 5px
+}
+
+.study h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 7px
+}
+
+.study p {
+    color: var(--muted);
+    margin: 0;
+    font-size: .92rem
+}
+
+.study-mark {
+    font: .72rem 'DM Mono', monospace;
+    color: #9aa6ae;
+    text-align: right
+}
+
+.language-card {
+    padding: 27px;
+    background: white;
+    border: 1px solid #e0e6e9
+}
+
+.language-card h3 {
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 25px 0 12px
+}
+
+.progress {
+    height: 5px;
+    background: #e5ebef;
+    border-radius: 0
+}
+
+.progress-bar {
+    background: #4274a7
+}
+
+.language-card small {
+    color: var(--muted)
+}
+
+.skill-note,
+.runtime-note {
+    font-size: .78rem;
+    color: #74818a;
+    line-height: 1.6;
+    margin-top: 20px
+}
+
+.project-card {
+    border: 1px solid #e0e5e8;
+    height: 100%;
+    transition: transform .2s, box-shadow .2s
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px #1f344117
+}
+
+.project-top {
+    height: 190px;
+    padding: 23px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font: .7rem 'DM Mono', monospace;
+    letter-spacing: .08em
+}
+
+.project-top span+span {
+    font-size: 2rem;
+    line-height: 1
+}
+
+.project-blue {
+    background: #87a8c9
+}
+
+.project-navy {
+    background: #223b53
+}
+
+.project-body {
+    padding: 27px
+}
+
+.project-body h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: -.04em
+}
+
+.project-body p {
+    color: var(--muted);
+    font-size: .9rem;
+    line-height: 1.7;
+    min-height: 62px
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px
+}
+
+.tags span {
+    padding: 6px 9px;
+    background: #eef2f4;
+    color: #536673;
+    font-size: .68rem
+}
+
+.project-link {
+    display: flex;
+    justify-content: space-between;
+    color: #264e76;
+    text-decoration: none;
+    border-top: 1px solid #e3e8eb;
+    padding-top: 17px;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: .84rem
+}
+
+.runtime-note {
+    margin-top: 30px
+}
+
+.dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #55a581;
+    margin: 0 8px 1px 0
+}
+
+.contact-section {
+    background: var(--navy);
+    color: white;
+    padding: 80px 0 24px
+}
+
+.contact-section h2 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 800;
+    letter-spacing: -.07em;
+    margin-top: 14px
+}
+
+.contact-section .eyebrow {
+    color: #90acd0
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 38px;
+    padding: 24px 0;
+    border-top: 1px solid #ffffff2a
+}
+
+.contact-options a,
+.contact-options div {
+    color: white;
+    text-decoration: none;
+    font-size: .9rem
+}
+
+.contact-options small {
+    display: block;
+    margin-bottom: 10px;
+    color: #8ca4ba
+}
+
+.contact-options a:hover {
+    color: #9fc4ff
+}
+
+footer {
+    border-top: 1px solid #ffffff2a;
+    margin-top: 65px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #a2b4c2;
+    font: .65rem 'DM Mono', monospace;
+    letter-spacing: .06em
+}
+
+footer span {
+    color: #8296a6
+}
+
+@media(max-width:767px) {
+    .hero {
+        padding: 125px 0 70px
+    }
+
+    .identity-card {
+        margin: 0
+    }
+
+    .section-pad {
+        padding: 75px 0
+    }
+
+    .hero-note {
+        margin-top: 50px
+    }
+
+    .study {
+        grid-template-columns: 1fr 30px;
+        gap: 8px
+    }
+
+    .study .year {
+        grid-column: 1/-1
+    }
+
+    .contact-options {
+        grid-template-columns: 1fr 1fr
+    }
+
+    footer {
+        margin-top: 40px
+    }
+}
+
+.strengths {
+    margin-top: 21px;
+    padding: 17px 19px;
+    background: #fff;
+    border: 1px solid #e0e6e9
+}
+
+.strengths ul {
+    padding-left: 17px;
+    margin: 12px 0 0;
+    color: #596a77;
+    font-size: .78rem;
+    line-height: 1.85
+}

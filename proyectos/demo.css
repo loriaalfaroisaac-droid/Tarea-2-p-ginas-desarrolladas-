@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font: 14px Arial, sans-serif;
+    color: #253746
+}
+
+.demo-shell {
+    min-height: 100vh;
+    display: flex
+}
+
+.demo-sidebar {
+    width: 205px;
+    flex: 0 0 205px;
+    background: #e8eef6;
+    padding: 20px 14px;
+    display: flex;
+    flex-direction: column
+}
+
+.back {
+    color: #365877;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 34px
+}
+
+.demo-sidebar h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px
+}
+
+.demo-sidebar .nav-link {
+    text-align: left;
+    color: #243a4b;
+    background: transparent;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 11px;
+    margin: 3px 0
+}
+
+.demo-sidebar .nav-link:hover,
+.demo-sidebar .nav-link.active {
+    background: #7ca6d8;
+    color: #102337
+}
+
+.sidebar-note {
+    margin-top: auto;
+    color: #62778a;
+    font-size: 11px
+}
+
+.demo-main {
+    padding: 25px 30px;
+    min-width: 0;
+    flex: 1;
+    background: #f5f7fa
+}
+
+.demo-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9e1e9;
+    padding-bottom: 16px
+}
+
+.demo-top span:first-child {
+    color: #70869a;
+    font: 11px monospace;
+    letter-spacing: .1em
+}
+
+.demo-top h2 {
+    font-size: 22px;
+    margin: 7px 0 0;
+    font-weight: 700
+}
+
+.status {
+    font-size: 12px;
+    color: #438064
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 18px 0
+}
+
+.actions button {
+    font-size: 12px
+}
+
+.form-area {
+    background: #fff;
+    border: 1px solid #dfe5ea;
+    padding: 15px;
+    margin-bottom: 18px
+}
+
+.form-area:empty {
+    display: none
+}
+
+.table-wrap {
+    background: white;
+    border: 1px solid #dfe5ea;
+    overflow: auto
+}
+
+.table {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 12px
+}
+
+.table thead th {
+    background: #eff3f7;
+    color: #4b6071;
+    font-weight: 600
+}
+
+.table td,
+.table th {
+    padding: 11px 12px
+}
+
+.demo-foot {
+    font-size: 11px;
+    color: #87939c;
+    margin-top: 18px
+}
+
+.graph-area {
+    background: white;
+    padding: 22px;
+    margin-top: 14px
+}
+
+.bar-row {
+    display: grid;
+    grid-template-columns: 110px 1fr 30px;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+    font-size: 12px
+}
+
+.bar {
+    height: 17px;
+    background: #7ca6d8
+}
+
+.airbnb .btn-primary {
+    background: #7ca6d8;
+    border-color: #7ca6d8;
+    color: #142b41
+}
+
+.airbnb .btn-outline-secondary {
+    border-color: #899cab;
+    color: #354d60
+}
+
+@media(max-width:700px) {
+    .demo-shell {
+        display: block
+    }
+
+    .demo-sidebar {
+        width: 100%;
+        padding: 14px
+    }
+
+    .back {
+        margin-bottom: 12px
+    }
+
+    .demo-sidebar h1 {
+        margin-bottom: 7px
+    }
+
+    .demo-sidebar .nav {
+        flex-direction: row !important;
+        flex-wrap: wrap
+    }
+
+    .sidebar-note {
+        display: none
+    }
+
+    .demo-main {
+        padding: 20px 13px
+    }
+}
+
+.demo-main {
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) minmax(300px, 420px);
+    grid-template-rows: auto auto 1fr auto;
+    gap: 0 18px
+}
+
+.demo-top,
+.actions,
+.form-area,
+.demo-foot {
+    grid-column: 1
+}
+
+.table-wrap {
+    grid-column: 2;
+    grid-row: 1/4
+}
+
+.graph-area {
+    grid-column: 1/3
+}
+
+@media(max-width:700px) {
+    .demo-main {
+        display: block
+    }
+
+    .table-wrap {
+        margin-top: 12px;
+        max-height: 55vh
+    }
+}
+
+.back-link {
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    z-index: 2;
+    color: #365877;
+    text-decoration: none;
+    font-size: 12px
+}
+
+.demo-sidebar .nav-link {
+    font-family: Arial, sans-serif
+}
+
+.demo-top h2 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700
+}
+
+.actions button {
+    border-radius: 2px
+}
+
+.table tbody tr {
+    cursor: pointer
+}
+
+.table tbody tr.selected-row>* {
+    background: #d7e5f3
+}
+
+.modal-content {
+    border-radius: 2px
+}
+
+.modal-header {
+    padding: 10px 14px;
+    background: #f1f1f1
+}
+
+.modal-body {
+    padding: 14px
+}
+
+.modal-content .form-control {
+    border-radius: 2px;
+    font-family: Arial, sans-serif;
+    font-size: 13px
+}
+
+.modal-content .btn {
+    border-radius: 2px
+}
+
+.airbnb .btn-primary {
+    background: #7ca6d8;
+    border-color: #7ca6d8;
+    color: #142b41
+}
+
+.airbnb .table-wrap {
+    min-height: 380px
+}
+
+@media(max-width:700px) {
+    .back-link {
+        position: relative;
+        display: block;
+        text-align: right;
+        margin: 7px 12px
+    }
+
+    .airbnb .table-wrap {
+        min-height: 250px
+    }
+}

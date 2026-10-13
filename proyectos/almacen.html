@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NOVA ONLINE · Simulador de operaciones</title>
+    <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="nova.css">
+</head>
+
+<body class="nova"><a class="portfolio-back" href="../index.html#proyectos">← Volver al CV</a>
+    <section class="window">
+        <header class="nova-head">
+            <h1>NOVA ONLINE</h1><span>SIMULADOR DE OPERACIONES</span>
+        </header>
+        <main class="nova-main">
+            <p class="choose">Seleccione una operación</p>
+            <nav class="nova-menu" id="nova-nav"><button data-view="PRODUCTOS">PRODUCTOS</button><button
+                    data-view="CLIENTES">CLIENTES</button><button data-view="PROVEEDORES">PROVEEDORES</button><button
+                    data-view="COMPRAS">COMPRAS</button><button data-view="ENTRADA">ENTRADA DE PRODUCTOS</button></nav>
+            <section class="nova-screen d-none" id="nova-screen">
+                <h2 id="nova-title"></h2>
+                <form id="nova-form">
+                    <div id="nova-fields"></div>
+                    <div id="nova-grid" class="d-none"></div>
+                    <fieldset class="status-box">
+                        <legend>Estado de la operación</legend><span id="nova-status">Esperando operación...</span>
+                    </fieldset>
+                    <div id="nova-buttons" class="form-buttons"></div>
+                </form>
+            </section>
+        </main>
+    </section>
+    <script src="../vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../script-demo-nova.js"></script>
+</body>
+
+</html>
